@@ -30,7 +30,7 @@ import (
 )
 
 func main() {
-  webhookUrl := "https://hooks.slack.com/services/TKDC1KVV1/XXXXXXXXXXXXXXX/XXXXXXXXXXXXXXX"
+  webhookUrl := "https://hooks.slack.com/services/XXXXXXX/XXXXXXXXXXXXXXX/XXXXXXXXXXXXXXX"
   err = slacknotifications.SendSlackNotification(webhookUrl, summaryString)
   if err != nil {
     fmt.Println("Error while sending msg to slack")
@@ -45,5 +45,5 @@ func main() {
 - Go to https://my.slack.com/services/new/incoming-webhook/ link, it may ask you to log in
 ![alt text](https://i.ibb.co/g7m9vmY/webhook1.png)
 - Choose the channel you want to post the messages and click on the Add Incoming Webhooks integration button.
-- Once you click above mentioned button this will give you the webhook url (e.g. https://hooks.slack.com/services/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)
+- Once you click above mentioned button this will give you the webhook url (e.g. https://hooks.slack.com/services/XXXXX/xxxxxxx/xxxxxxxxxxxxxx)
 ![alt text](https://i.ibb.co/M1TYCNW/webhook2.png)
